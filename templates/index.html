@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+  <form method="post" action="/processed">
+
+    <h3>How many prepped deli meat portions do you have from yesterday?</h3>
+    <div class="form-group">
+      <input type="number" name="sTurkeyCount" class="form-control" min="0" max="1000" placeholder="Small Turkey" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="lTurkeyCount" class="form-control" min="0" max="1000" placeholder="Large Turkey" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="sMChixCount" class="form-control" min="0" max="1000" placeholder="Small Mesquite Chicken" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="lMChixCount" class="form-control" min="0" max="1000" placeholder="Large Mesquite Chicken" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="sRBCount" class="form-control" min="0" max="1000" placeholder="Small Roast Beef" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="lRBCount" class="form-control" min="0" max="1000" placeholder="Large Roast Beef" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="sPastramiCount" class="form-control" min="0" max="1000" placeholder="Small Pastrami" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="lPastramiCount" class="form-control" min="0" max="1000" placeholder="Large Pastrami" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="capiCount" class="form-control" min="0" max="1000" placeholder="Capicola" required autofocus>
+    </div>
+
+    <h3>How many pounds of deli meat do you already have sliced (not prepped)?</h3>
+    <div class="form-group">
+      <input type="number" name="turkeyWeight" class="form-control" min="0" max="500" step ="0.01" placeholder="Pounds of Turkey" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="chixWeight" class="form-control" min="0" max="500" step ="0.01" placeholder="Pounds of Mesquite Chicken" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="rbWeight" class="form-control" min="0" max="500" step ="0.01" placeholder="Pounds of Roast Beef" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="pastramiWeight" class="form-control" min="0" max="500" step ="0.01" placeholder="Pounds of Pastrami" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="capiWeight" class="form-control" min="0" max="500" step ="0.01" placeholder="Pounds of Capicola" required autofocus>
+    </div>
+
+    <h3>How many of the following items do you have from yesterday?</h3>
+    <div class="form-group">
+      <input type="number" name="ham" class="form-control" min="0" max="15" step ="0.01" placeholder="Full tins of Ham" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="salami" class="form-control" min="0" max="15" step ="0.01" placeholder="3/4-full tins of Salami" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="bologna" class="form-control" min="0" max="500" placeholder="Slices of Bologna" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="provolone" class="form-control" min="0" max="15" step ="0.01" placeholder="Full tins of Provolone Cheese" required autofocus>
+    </div>
+    <div class="form-group">
+      <input type="number" name="tomato" class="form-control" min="0" max="15" step ="0.01" placeholder="1/2-full tins of Tomatoes" required autofocus>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+  </form>
+</div>
+{% endblock content %}

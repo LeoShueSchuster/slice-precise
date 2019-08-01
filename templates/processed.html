@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<div class="container">
+  <h3>The weigh-out person will need to prep the following portions for the day:</h3>
+  <div class="well">
+    <p>Turkey: {{ sTurkeyPortionsNeeded }} Smalls & {{ lTurkeyPortionsNeeded }} Larges</p>
+    <p>Mesquite Chicken: {{ sMChixPortionsNeeded }} Smalls & {{ lMChixPortionsNeeded }} Larges</p>
+    <p>Roast Beef: {{ sRBPortionsNeeded }} Smalls & {{ lRBPortionsNeeded }} Larges</p>
+    <p>Pastrami: {{ sPastramiPortionsNeeded }} Smalls & {{ lPastramiPortionsNeeded }} Larges</p>
+    <p>Capicola: {{ capiPortionsNeeded }}</p>
+  </div>
+  <h4>Note: Give the above count to the weigh-out person!</h4>
+</div>
+
+<div class="container">
+  <h3><br>You will need to slice the following amount of each:</h3>
+  <div class="well">
+    <p>{{ poundsTurkey }} pounds of Turkey</p>
+    <p>{{ poundsChix }} pounds of Mesquite Chicken</p>
+    <p>{{ poundsRB }} pounds of Roast Beef</p>
+    <p>{{ poundsPastrami }} pounds of Pastrami</p>
+    <p>{{ poundsCapi }} pounds of Capicola</p>
+    <p>{{ tinsOfHam }} full tins of Ham</p>
+    <p>{{ tinsOfSalami }} 3/4-full tins of Salami</p>
+    <p>{{ slicesOfBologna }} slices of Bolgna</p>
+    <p>{{ tinsOfProvolone }} full tins of Provolone Cheese</p>
+    <p>{{ numTomato }} Tomatoes</p>
+  </div>
+</div>
+
+<div class="container">
+  <h3>Have another great day slicing precisely!</h3>
+</div>
+{% endblock content %}

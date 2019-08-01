@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Leo">
+
+    <title>Slice Precise</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/sign.css') }}" rel="stylesheet">
+  </head>
+
+  <body>
+	<div class="container"><h1><b>Slice Precise<b></h1></div>
+	{% block content %}{% endblock %}
+	<div class="container"><h4><br>Author: Leo Shue Schuster</h4></div>
+	<div class="container"><h4><br>Created: July 2019</h4></div>
+  </body>
+</html>
