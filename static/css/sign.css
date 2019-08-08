@@ -4,6 +4,13 @@ body {
   background-color: #eee;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
 .form-signin {
   max-width: 330px;
   padding: 15px;
